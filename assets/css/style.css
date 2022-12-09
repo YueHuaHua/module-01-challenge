@@ -87,19 +87,35 @@ p {
     margin-left: 25px;
 }
 
+.main {
+    display: flex;
+    margin: auto 0.5rem 1rem;
+}
+
+.space {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
 .content {
-    width: 75%;
+    /*width: 75%;*/
     display: inline-block;
-    margin-left: 20px;
+    flex: 3;
+    /*margin-left: 20px;*/
+}
+
+.flex-col {
+    flex-direction: column;
 }
 
 .benefits {
-    margin-right: 20px;
+    /*margin-right: 20px;*/
     padding: 20px;
     clear: both;
-    float: right;
+    flex: 1;
+    /*float: right;
     width: 20%;
-    height: 100%;
+    height: 100%;*/
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #2589bd;
 }
@@ -152,10 +168,18 @@ p {
     max-width: 150px;
 }
 
+/* ----------------------- Content ----------------------- */
+
+.flex-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .search-engine-optimization {
     margin-bottom: 20px;
     padding: 50px;
-    height: 300px;
+    /* height: 300px; */
+    flex: 1;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #0072bb;
     color: #ffffff;
@@ -164,7 +188,8 @@ p {
 .online-reputation-management {
     margin-bottom: 20px;
     padding: 50px;
-    height: 300px;
+    /* height: 300px; */
+    flex: 1;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #0072bb;
     color: #ffffff;
@@ -173,7 +198,8 @@ p {
 .social-media-marketing {
     margin-bottom: 20px;
     padding: 50px;
-    height: 300px;
+    /* height: 300px; */
+    flex: 1;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #0072bb;
     color: #ffffff;
@@ -205,6 +231,8 @@ p {
     margin-bottom: 20px;
     font-size: 36px;
 }
+
+/* ----------------------- Content - End ----------------------- */
 
 .footer {
     padding: 30px;
