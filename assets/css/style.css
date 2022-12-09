@@ -13,6 +13,24 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
     color: #ffffff;
+    
+    align-items: center;
+    display: flex;
+}
+
+#logo,
+nav {
+    flex: 1;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 12px;
+}
+
+nav li {
+    list-style: none;
 }
 
 .header h1 {
