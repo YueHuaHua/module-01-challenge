@@ -1,3 +1,5 @@
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+
 <!DOCTYPE html>
 <html lang="en-gb">
 
@@ -7,7 +9,7 @@
     <title>website</title>
 </head>
 
-<body>
+<body class="body-button">
     <header class="header">
         <h1 id="logo">Hori<span class="seo">seo</span>n</h1>
         <nav>
@@ -19,9 +21,24 @@
         </nav>
     </header>
     
-    <div>
-        <img src="./assets/images/accessibility-icon.png" class="accessibility">
-    </div>
+    <section>
+        <!-- <button id="toggleAccessPanel"> -->
+        <input type="image" src="./assets/images/accessibility-icon.png" class="accessibility-icon" onclick="sample_open()"/>
+            <!-- <img src="./assets/images/accessibility-icon.png" class="accessibility" > -->
+        <!-- </button> -->
+    </section>
+
+    <section class="accessibility-panel" style="display:none;z-index:2;width:40%;min-width:300px" id="accessPanel">
+        <a href="#" onclick="sample_close()" class="close">ⓧ</a>
+        <h6>Accessibility Options</h6>
+        <div id="selection">
+            <p>Dyslexic</p>
+            <div class="b"> 
+                <span class="slider" ></span>
+            </div>
+        </div>
+    </section>
+    
 
     <div class="hero"></div>
 
@@ -85,6 +102,26 @@
             &copy; 2019 Horiseon Social Solution Services, Inc.
         </p>
     </div>
+
+    <script>
+        // Script to open and close sidebar
+        function sample_open() {
+        document.getElementById("accessPanel").style.display = "block";
+        }
+        
+        function sample_close() {
+        document.getElementById("accessPanel").style.display = "none";
+        }
+
+        $(document).ready(function(){
+            $(".b").click(function(){
+                $("*").toggleClass("active");
+                $(".slider").toggleClass("active");
+                $(".b").toggleClass("active");
+            });
+        });
+
+    </script>
 </body>
 
 </html>
