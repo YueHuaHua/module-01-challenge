@@ -40,15 +40,15 @@
         </div>
 
         <div id="selection">
-            <p>Learning</p>
-            <div class="slider-toggle" id="learning-slider">
-                <span class="slider" id="learning-slider-span"></span>
+            <p>ADHD</p>
+            <div class="slider-toggle" id="adhd-slider">
+                <span class="slider" id="adhd-slider-span"></span>
             </div>
         </div>
     </section>
 
     <section>
-        <div class="line" id="learning-line" style="display:none"></div>
+        <div class="line" id="adhd-line" style="display:none"></div>
     </section>
     
     <!-- Banner -->
@@ -141,14 +141,14 @@
         });
 
         $(document).ready(function(){
-            var learning_line = document.getElementById("learning-line");
-            $("#learning-slider").click(function(){
-                $("#learning-slider-span").toggleClass("active");
-                $("#learning-slider").toggleClass("active");
-                if (learning_line.style.display === "none") {
-                    learning_line.style.display = "block";
+            var adhd_line = document.getElementById("adhd-line");
+            $("#adhd-slider").click(function(){
+                $("#adhd-slider-span").toggleClass("active");
+                $("#adhd-slider").toggleClass("active");
+                if (adhd_line.style.display === "none") {
+                    adhd_line.style.display = "block";
                 } else {
-                    learning_line.style.display = "none";
+                    adhd_line.style.display = "none";
                 }
                 $(window).on('mousemove', moveLine);
             });
