@@ -79,11 +79,76 @@ p {
 
 /* ----------------------- Accessibility ----------------------- */
 
-.accessibility{
+.accessibility-icon {
     position: fixed;
     max-width: 50px;
     top: 20px;
     right: 10px;
+}
+
+.accessibility-panel {
+    height: 100%;
+    background: #122f3d;
+    padding: 1em;
+    font-size: 24px;
+    color: #ffffff;
+    position: fixed;
+    top: 0;
+    right: -400px;
+}
+
+h6 {
+    padding-top: 10px;
+}
+
+.close {
+    font-size: 24px;
+}
+
+@font-face { font-family: "OpenDyslexic"; src: url('https://dl.dropboxusercontent.com/s/qfpakpjedhsrdb9/OpenDyslexicAlta-Regular.ttf'); } 
+
+*.active {
+    font-family: OpenDyslexic;
+}
+ 
+#selection {
+     position:relative;
+     width:36%;
+}
+
+.b {
+     cursor:pointer;
+     background:#ffffff;
+     padding:10px;
+     height:20px;
+     transition:.6s ease-in-out;
+     width:50px;
+     position:relative;
+     margin:0px auto;
+     border-radius:30px;
+       
+}
+   
+ .slider {
+     padding:4px;
+     position:absolute;
+     background:#888;
+     box-shadow:2px 2px 10px rgba(0,0,0,.2);
+     border-radius:30px;
+     width:calc(50% - 10px);
+     top:5px;
+     transition:.6s ease-in-out;
+     left:5px;
+     height:calc(100% - 20px);
+   }
+   
+.slider.active {
+     transform:translate(26px, 0);
+     background:#122f3d;
+}
+
+.b.active {
+     background:#ffffff;
 }
 
 /* ----------------------- Accessibility ----------------------- */
