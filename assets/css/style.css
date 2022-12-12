@@ -105,18 +105,18 @@ h6 {
     font-size: 24px;
 }
 
-@font-face { font-family: "OpenDyslexic"; src: url('https://dl.dropboxusercontent.com/s/qfpakpjedhsrdb9/OpenDyslexicAlta-Regular.ttf'); } 
+@font-face { font-family: "OpenDyslexic"; src: url('https://dl.dropboxusercontent.com/s/qfpakpjedhsrdb9/OpenDyslexicAlta-Regular.ttf'); }
 
 *.active {
-    font-family: OpenDyslexic;
+    font-family: OpenDyslexic !important;
 }
- 
+
 #selection {
      position:relative;
      width:36%;
 }
 
-.b {
+.slider-toggle {
      cursor:pointer;
      background:#ffffff;
      padding:10px;
@@ -128,8 +128,8 @@ h6 {
      border-radius:30px;
        
 }
-   
- .slider {
+
+.slider {
      padding:4px;
      position:absolute;
      background:#888;
@@ -141,15 +141,26 @@ h6 {
      left:5px;
      height:calc(100% - 20px);
    }
-   
+
 .slider.active {
      transform:translate(26px, 0);
      background:#122f3d;
 }
 
-.b.active {
+.slider-toggle.active {
      background:#ffffff;
 }
+
+.line {
+    position: absolute;
+     width: 200%;
+     height: 10px;
+    left: 50%;
+      margin: 0 0 0 -100%;
+    background: rgb(0, 0, 0);
+    backface-visibility: hidden;
+    pointer-events: none;
+  }
 
 /* ----------------------- Accessibility ----------------------- */
 
